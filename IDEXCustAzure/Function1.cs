@@ -35,7 +35,7 @@ namespace IDEXCustAzure
                 // Get connection string and target API URL from environment variables
                 string sourceConnectionString = "Server=jdeapiproddbserver.database.windows.net;Database=jdeapiprod;User ID=jdeapiprodadmin;Password=Idexlc1@3;Connect Timeout=60;";
 
-                string targetApiUrl = Environment.GetEnvironmentVariable("TargetApiUrl") ?? "https://myidexhubapiprod.azure-api.net/api/v1/jde/customer/update/trigger";
+                string targetApiUrl = Environment.GetEnvironmentVariable("TargetApiUrl") ?? "https://myidexhubprod.azurewebsites.net/api/v1/jde/customer/update/trigger";
 
                 using (SqlConnection sourceConnection = new SqlConnection(sourceConnectionString))
                 {
